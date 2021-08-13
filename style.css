@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+  --color-primary : #f7f4f2;
+  --color-secondary : #3b3b3b;
+  --color-border : #f7f4f2;
+  --color-text : #9c9c9c;
+  --color-title: #3b3b3b;
+
+  --font-title: "GT Alpina";
+  --font-text: "GT Alpina";
+  --font-btn: "GT Alpina";
+  --font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.title {
+  font-family: var(--font-title);
+  font-weight: 300;
+  font-size: 23px;
+  color: var(--color-title);
+  letter-spacing: 3px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.text {
+
+  font-size: 16px;
+  color: var(--color-text);
+  font-family: "GT Alpina";
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 12px 28px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  background: 0 0;
+  font-family: var(--font-btn);
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.nav--img {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.menu {
+  margin-left: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 20%;
+  background-color: var(--color-primary);
+  
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  transform: translateX(100%);
+  transition: transform .5s ease-in;
+
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 20px;
+  
+}
+
+.nav-links li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: var(--font-family);
+  letter-spacing: 3px;
+  color: #3b3b3b;
+  
+}
+
+.nav-links li a:hover {
+  color: #9c9c9c;
+  
+}
+
+
+.hero {
+  background-image: url(./images/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.hero-active {
+  
+  background-image: linear-gradient(to bottom right , rgba(0,0,0,.5),rgba(0,0,0,.5)) url(./images/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hero--title {
+  font-size: 90px;
+  color: var(--color-primary);
+  font-weight: 100;
+}
+
+.hero--text {
+  font-size: 65px;
+  color: var(--color-primary);
+  font-weight: 100;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navlinkfade {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+.x--img {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.x--li {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+
+
+
+
